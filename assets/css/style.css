@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 70vh;
+}
+
+svg .bg {
+  fill-opacity: 1;
+  -webkit-animation: bg 8s linear;
+          animation: bg 8s linear;
+}
+
+svg g.path {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+  stroke: #428dff;
+  fill: #428dff;
+  stroke-dashoffset: 0;
+  -webkit-animation: pathfill 9s linear;
+          animation: pathfill 9s linear;
+}
+
+svg g.path .dot {
+  -webkit-animation: dot 500ms linear;
+          animation: dot 500ms linear;
+  stroke-dasharray: 7;
+}
+
+svg g.path .brain_book {
+  -webkit-animation: brain_book 5s linear;
+          animation: brain_book 5s linear;
+  stroke-dasharray: 275;
+}
+
+svg g.path .inside_brain_down {
+  -webkit-animation: inside_brain_down 6s linear;
+          animation: inside_brain_down 6s linear;
+  stroke-dasharray: 40;
+}
+
+svg g.path .inside_brain_up {
+  -webkit-animation: inside_brain_up 6500ms linear;
+          animation: inside_brain_up 6500ms linear;
+  stroke-dasharray: 20;
+}
+
+svg g.path .br {
+  -webkit-animation: br 7s linear;
+          animation: br 7s linear;
+  stroke-dasharray: 20;
+}
+
+@-webkit-keyframes dot {
+  0% {
+    stroke-dashoffset: 7;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dot {
+  0% {
+    stroke-dashoffset: 7;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes brain_book {
+  0% {
+    stroke-dashoffset: 275;
+  }
+  10% {
+    stroke-dashoffset: 275;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes brain_book {
+  0% {
+    stroke-dashoffset: 275;
+  }
+  10% {
+    stroke-dashoffset: 275;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes inside_brain_down {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  83.33% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes inside_brain_down {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  83.33% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes inside_brain_up {
+  0% {
+    stroke-dashoffset: 20;
+  }
+  92.31% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes inside_brain_up {
+  0% {
+    stroke-dashoffset: 20;
+  }
+  92.31% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes br {
+  0% {
+    stroke-dashoffset: 20;
+  }
+  92.86% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes br {
+  0% {
+    stroke-dashoffset: 20;
+  }
+  92.86% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes bg {
+  0% {
+    fill-opacity: 0;
+  }
+  87.5% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes bg {
+  0% {
+    fill-opacity: 0;
+  }
+  87.5% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@-webkit-keyframes pathfill {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+  }
+  88.89% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    stroke-width: 0;
+  }
+}
+
+@keyframes pathfill {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+  }
+  88.89% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    stroke-width: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
